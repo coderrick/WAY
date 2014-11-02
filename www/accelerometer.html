@@ -3,7 +3,9 @@
   <head>
     <title>Acceleration Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for PhoneGap to load
@@ -14,6 +16,7 @@
     //
     function onDeviceReady() {
         navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+		alert("It made it here");
     }
 
     // onSuccess: Get a snapshot of the current acceleration
